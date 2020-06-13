@@ -1,4 +1,4 @@
-package Algorithms;
+package com.puzan.algorithm;
 
 
 import java.awt.*;

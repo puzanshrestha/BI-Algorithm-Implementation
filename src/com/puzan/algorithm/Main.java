@@ -1,10 +1,7 @@
-package Algorithms;
+package com.puzan.algorithm;
 
 
 import com.sun.corba.se.impl.protocol.giopmsgheaders.Message;
-import java.awt.Color;
-import java.awt.Graphics;
-import javax.swing.JPanel;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
