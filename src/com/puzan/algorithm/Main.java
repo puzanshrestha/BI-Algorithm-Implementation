@@ -1,40 +1,39 @@
 package com.puzan.algorithm;
 
 
-import com.sun.corba.se.impl.protocol.giopmsgheaders.Message;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+import javax.swing.border.Border;
+import java.awt.*;
+
 /**
- *
  * @author pujan
  */
 public class Main extends javax.swing.JFrame {
 
     /**
      * Creates new form NewJFrame
-     *
-     *
      */
     private Double coordinates[][] = {
-        {2.0, 10.0},
-        {2.0, 5.0},
-        {8.0, 4.0},
-        {5.0, 8.0},
-        {7.0, 5.0},
-        {6.0, 4.0},
-        {1.0,2.0},
-        {4.0,9.0},
-        
-        
-        {10.0,10.0},
-        {10.0,11.0},
-        {11.0,13.0},
-        
-        
+            {2.0, 10.0},
+            {2.0, 5.0},
+            {8.0, 4.0},
+            {5.0, 8.0},
+            {7.0, 5.0},
+            {6.0, 4.0},
+            {1.0, 2.0},
+            {4.0, 9.0},
+
+
+            {10.0, 10.0},
+            {10.0, 11.0},
+            {11.0, 13.0},
+
+
     };
 
     public Main() {
@@ -57,7 +56,7 @@ public class Main extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new FlowLayout());
 
         jButton2.setText("Knn");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +64,7 @@ public class Main extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 600, -1, -1));
+        getContentPane().add(jButton2);
 
         jButton1.setText("Kmeans");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -73,14 +72,14 @@ public class Main extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, -1));
+        getContentPane().add(jButton1);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(550, 550));
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 35, 570, 550));
+        getContentPane().add(jPanel1);
 
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 150, -1));
+        getContentPane().add(jLabel1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -117,7 +116,7 @@ public class Main extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
